@@ -1,0 +1,287 @@
+@import url(./reset.css);
+
+body {
+	background-color: #f2f5f7;
+	font-family: "Open Sans", Arial, sans-serif;
+}
+
+.container {
+	width: 94%;
+	margin: 0 auto;
+}
+
+#header {
+	background-color: #fff;
+	padding: 20px 0;
+}
+
+.header__title {
+	font-weight: bold;
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+
+.nav__link {
+	padding: 10px;
+	margin-bottom: 10px;
+	color: #9799a6;
+	background-color: #fff;
+	transition: 0.5s;
+	display: block;
+
+	border-bottom: 1px solid #9799a6;
+}
+
+#main {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.subtitle {
+	font-weight: bold;
+	font-size: 32px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.main__cursos-link {
+	height: 100px;
+	width: 23%;
+	background-color: #fff;
+	text-align: center;
+	margin: 1%;
+	transition: 0.3s;
+	box-shadow: 2px 2px 2px #ccc;
+	position: relative;
+}
+
+.main__cursos-link a {
+	color: #000;
+	font-weight: bold;
+	width: 100%;
+	height: 100%;
+}
+
+.main__cursos-link:hover {
+	box-shadow: 4px 4px 4px #ccc;
+}
+
+.main__cursos-link a:before {
+	content: "";
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: 10px auto;
+}
+
+.main__cursos-link:nth-child(even) a:before {
+	background: url(../img/background1.svg) no-repeat;
+}
+
+.main__cursos-link:nth-child(odd) a:before {
+	background: url(../img/background2.svg) no-repeat;
+}
+
+#footer {
+	background-color: #324c64;
+	padding-top: 20px;
+}
+
+#footer .subtitle {
+	color: #fff;
+}
+
+.footer__link {
+	color: #fff;
+	margin-top: 10px;
+}
+
+.footer__link {
+	font-size: 0.9em;
+}
+
+.footer__title {
+	font-weight: 700;
+	font-size: 1.3em;
+	margin: 0.9em 0;
+	padding-left: 0.3em;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+}
+
+.footer__title + .footer__link {
+	margin-top: 0;
+}
+
+.footer__title-database {
+	color: #ec6e5a;
+	border-left: 4px solid #ec6e5a;
+}
+.footer__title-framework {
+	color: #ad85bf;
+	border-left: 4px solid #ad85bf;
+}
+.footer__title-frontend {
+	color: #5ec6f3;
+	border-left: 4px solid #5ec6f3;
+}
+.footer__title-backend {
+	color: #25d285;
+	border-left: 4px solid #25d285;
+}
+
+.footer__sponsors {
+	margin-top: 30px;
+	background: #f2f5f7;
+	padding: 20px 0;
+}
+
+.footer__form {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.footer__form label[for="email-contato"] {
+	font-weight: bold;
+	font-size: 14px;
+	color: #000;
+	margin-bottom: 5px;
+	display: block;
+}
+
+.footer__email {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding: 10px;
+}
+
+.footer__submit {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: #4dba7a;
+	color: #fff;
+	cursor: pointer;
+}
+
+.footer__submit,
+.footer__email {
+	outline: 0;
+	border: 1px solid #4dba7a;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+#video {
+	background-color: #5e9edc;
+	padding: 25px 0;
+}
+
+.video-video {
+	max-width: 100%;
+}
+
+.video .container {
+	color: #fff;
+}
+
+.video__about-title {
+	font-size: 1.2em;
+	font-weight: bolder;
+}
+
+.video__about {
+	font-size: 1.3em;
+	line-height: 2;
+}
+
+.video__button {
+	border-radius: 8px;
+	background-color: #ec6e5a;
+	display: block;
+	color: #fff;
+	border: none;
+	height: 50px;
+	font-size: 0.8em;
+	outline: none;
+	width: 100%;
+}
+
+.video__item {
+	width: 100%;
+}
+
+.footer__form-legend {
+	margin-bottom: 10px;
+}
+
+@media (min-width: 769px) {
+	.container {
+		width: 85%;
+	}
+
+	.subtitulo {
+		text-align: left;
+	}
+
+	.nav__link {
+		border-radius: 5px;
+		border: 1px solid #9799a6;
+	}
+
+	.nav__link:hover {
+		color: #fff;
+		background-color: #9799a6;
+	}
+
+	.header__title {
+		margin: 0;
+	}
+
+	#nav {
+		width: auto;
+	}
+
+	.nav__link {
+		width: auto;
+		margin: 0 0 0 10px;
+	}
+
+	.footer__form {
+		margin-top: 0;
+		text-align: left;
+	}
+
+	.main__cursos-link:nth-child(3n) {
+		margin-right: 0;
+	}
+
+	.main__cursos-link:nth-child(3n + 1) {
+		margin-left: 0;
+	}
+}
+
+@media (min-width: 1000px) {
+	.main__cursos-link {
+		margin: 1.333%;
+	}
+
+	.main__cursos-link:nth-child(3n) {
+		margin-right: 1.33%;
+	}
+
+	.main__cursos-link:nth-child(3n + 1) {
+		margin-left: 1.333%;
+	}
+
+	.main__cursos-link:nth-child(4n) {
+		margin-right: 0;
+	}
+
+	.main__cursos-link:nth-child(4n + 1) {
+		margin-left: 0;
+	}
+
+	.video__about {
+		margin-left: 1.5em;
+	}
+}

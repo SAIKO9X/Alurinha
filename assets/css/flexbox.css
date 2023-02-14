@@ -1,0 +1,111 @@
+/*=========== Header Section ===========*/
+
+#header .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+#nav {
+	display: flex;
+}
+
+/*=========== Main Section ===========*/
+
+.subtitle {
+	text-align: left;
+}
+
+.main__cursos {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/*=========== Video Section ===========*/
+
+#video .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.video__about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	text-align: center;
+}
+
+/*=========== Footer Section ===========*/
+
+.footer__nav-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__nav-list div {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer__sponsors .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__sponsors-list {
+	display: flex;
+	width: 75%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer__contact {
+	display: flex;
+	width: 25%;
+}
+
+@media screen and (max-width: 760px) {
+	#header .container,
+	#nav,
+	#video .container,
+	.main__cursos,
+	.footer__nav-list,
+	.footer__sponsors .container {
+		flex-direction: column;
+	}
+
+	#nav {
+		text-align: center;
+	}
+
+	.main__cursos-link {
+		width: 100%;
+	}
+
+	#video {
+		text-align: center;
+	}
+
+	.footer__nav,
+	.subtitle {
+		text-align: center;
+	}
+
+	.footer__nav-list {
+		align-items: center;
+	}
+
+	.footer__sponsors .container {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.footer__contact {
+		width: 100%;
+		justify-content: center;
+	}
+
+	.nav__link-app {
+		order: -1;
+	}
+}
